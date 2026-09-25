@@ -1,6 +1,6 @@
 :root {
   --text-color: hwb(120 97% 2%);
-  --link-color: hwb(237 2% 4%);
+  --link-color: lab(73.91% -24.06 -35.05);
   --background-color: hsl(0, 0%, 0%);
 }
 
