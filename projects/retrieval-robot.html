@@ -1,4 +1,443 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="MPTC Specimen Retrieval Robot — Krystal Foster engineering portfolio" name="description"/><title>MPTC Specimen Retrieval Robot | Krystal Foster</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="project.css" rel="stylesheet"/></head><body class="project-page"><header class="nav"><nav aria-label="Main navigation" class="wrap nav-inner"><a class="brand" href="../index.html">Krystal Foster<span style="color:var(--blue)">.</span></a><div class="nav-links"><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#skills">Skills</a><a href="../index.html#journey">My Journey</a><a href="../index.html#resume">Resume</a><a href="../index.html#contact">Contact</a></div></nav></header><main><section class="wrap project-hero"><a class="back-link" href="../index.html#projects">← Back to all projects</a><p class="eyebrow">SUMMER 2026 · ROBOTICS INTERN · IDAHO NATIONAL LABORATORY</p><h1>MPTC Specimen Retrieval Robot</h1><p class="lead">Reconfiguring existing robotic hardware and developing a unified operator interface to assist with retrieval of displaced irradiated specimens in a specialized test-cell environment.</p><div class="tags"><span class="tag">Raspberry Pi</span><span class="tag">Python</span><span class="tag">PyQt5</span><span class="tag">Mobile Robotics</span><span class="tag">Sensor Integration</span></div><figure><img alt="Mobile retrieval platform with mounted robotic arm and camera hardware." class="hero-img" loading="lazy" src="../images/internship/retrieval-robot.jpeg"/><figcaption>Mobile retrieval platform with mounted robotic arm and camera hardware.</figcaption></figure></section><div class="wrap case-sections"><!-- SKILLS APPLIED: Keep these names consistent with the Technical Skills section on index.html. Edit the descriptions to reflect your actual contributions. --><section class="panel"><p class="num">01 / CONTEXT</p><h2>The Engineering Problem</h2><p>During my robotics internship at the Structural Properties Laboratory at Idaho National Laboratory’s Materials and Fuels Complex, I worked on a specimen retrieval system for the MPTC. The test cell uses Universal Robots (UR) robotic arms and other equipment to manipulate samples during testing. Small irradiated specimens may become displaced or fall, creating a need for a remotely operated retrieval approach.</p></section><section class="panel"><p class="num">02 / MY ROLE</p><h2>System Integration &amp; Operator Interface</h2><p>I reconfigured existing components to create a mobile retrieval platform and used a Raspberry Pi as the central computer. I developed a Python/PyQt5 graphical interface that brought robotic arm control, rover movement, front and wrist camera views, and Geiger counter readings into one place. The goal was to make the separate subsystems more cohesive for operator use.</p><div class="flow"><div>Raspberry Pi<br/><small>Central computer</small></div><div>Python / PyQt5<br/><small>Operator interface</small></div><div>Robot &amp; Rover<br/><small>Movement control</small></div><div>Cameras &amp; Geiger<br/><small>Visual / radiation feedback</small></div></div></section><section class="panel"><p class="num">03 / INTERFACE</p><h2>Centralized Retrieval Controls</h2><p>The interface includes six robot-joint controls, gripper commands, rover movement buttons, two camera panels, and a radiation-monitoring area. Combining these functions allows an operator to view the work area and manage the robot from one application.</p><figure><img alt="Screenshot of the PyQt5 interface with arm controls, camera views, rover controls, and radiation monitor" class="hero-img" loading="lazy" src="../images/internship/control-interface.jpeg"/><figcaption>Python/PyQt5 control interface developed for the retrieval system.</figcaption></figure></section><section class="panel"><p class="num">04 / HARDWARE TESTING</p><h2>Robotic Arm &amp; Rover Demonstrations</h2><p>These recordings document separate robotic arm and mobile rover subsystem tests during development.</p><div class="video-grid"><!-- VIDEO: IMG_3793.mov converted to web-friendly MP4. Replace videos/robot-arm-test.mp4 if you want to upload an edited version. -->
-<figure class="portfolio-video"><video controls="" playsinline="" poster="../images/video-posters/robot-arm-test.mp4.jpg" preload="metadata"><source src="../videos/robot-arm-test.mp4" type="video/mp4"/>Your browser does not support HTML5 video.</video><figcaption>Robotic Arm Test</figcaption></figure><!-- VIDEO: IMG_0905.MOV converted to web-friendly MP4. Replace videos/rover-test.mp4 if you want to upload an edited version. -->
-<figure class="portfolio-video"><video controls="" playsinline="" poster="../images/video-posters/rover-test.mp4.jpg" preload="metadata"><source src="../videos/rover-test.mp4" type="video/mp4"/>Your browser does not support HTML5 video.</video><figcaption>Rover Movement Test</figcaption></figure></div><p class="note">These recordings demonstrate subsystem testing and validation, highlighting the functionality and performance of individual components prior to full system integration.</p></section><section class="panel"><p class="num">05 / ENGINEERING SKILLS</p><h2>What This Project Demonstrates</h2><p>Robotic system integration, Raspberry Pi development, Python/PyQt5 GUI programming, human–machine interface design, camera integration, sensor monitoring, and physical hardware testing.</p></section><section aria-labelledby="skills-applied-title" class="panel skills-applied"><p class="num">SKILLS IN PRACTICE</p><h2 id="skills-applied-title">Skills Applied</h2><p class="skills-intro">Here is how the tools and techniques from my <a href="../index.html#skills">Technical Skills</a> section were applied to this project.</p><div class="applied-skills-grid"><article class="applied-skill"><h3>Python / PyQt5</h3><p>Developed the operator interface that brings arm controls, rover navigation, camera views and radiation sensor readouts together.</p></article><article class="applied-skill"><h3>Raspberry Pi</h3><p>Used as the central computer for integrating the robotic arm, rover and connected devices.</p></article><article class="applied-skill"><h3>Circuit Design</h3><p>Applied hardware integration and connection troubleshooting to coordinate the robot’s electronic components.</p></article></div></section></div><div class="wrap next-links"><a href="../index.html#projects">← All Projects</a><a href="robotic-jigs.html">Next Project →</a></div></main><footer class="footer"><div class="wrap">© 2026 Krystal Foster · Mechatronics Engineering · <a href="../index.html#projects">All Projects</a></div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta
+    content="MPTC Specimen Retrieval Robot — Krystal Foster engineering portfolio"
+    name="description"
+  />
+  <title>MPTC Specimen Retrieval Robot | Krystal Foster</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link href="project.css" rel="stylesheet"/>
+</head>
+
+<body class="project-page">
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <nav aria-label="Main navigation" class="wrap nav-inner">
+
+      <a class="brand" href="../index.html">
+        Krystal Foster<span style="color:var(--blue)">.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#journey">My Journey</a>
+        <a href="../index.html#resume">Resume</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PROJECT HERO -->
+    <section class="wrap project-hero">
+
+      <a class="back-link" href="../index.html#projects">
+        ← Back to all projects
+      </a>
+
+      <p class="eyebrow">
+        SUMMER 2026 · ROBOTICS INTERN · IDAHO NATIONAL LABORATORY
+      </p>
+
+      <h1>MPTC Specimen Retrieval Robot</h1>
+
+      <p class="lead">
+        Reconfiguring existing robotic hardware and developing a
+        unified operator interface to assist with retrieval of
+        displaced irradiated specimens in a specialized test-cell
+        environment.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">Python</span>
+        <span class="tag">PyQt5</span>
+        <span class="tag">Mobile Robotics</span>
+        <span class="tag">Sensor Integration</span>
+        <span class="tag">ROS 2</span>
+        <span class="tag">RViz</span>
+        <span class="tag">pymycobot</span>
+      </div>
+
+      <figure>
+        <img
+          alt="Mobile retrieval platform with mounted robotic arm and camera hardware."
+          class="hero-img"
+          loading="lazy"
+          src="../images/internship/retrieval-robot.jpeg"
+        />
+        <figcaption>
+          Mobile retrieval platform with mounted robotic arm and
+          camera hardware.
+        </figcaption>
+      </figure>
+
+    </section>
+
+
+    <div class="wrap case-sections">
+
+      <!-- 01: CONTEXT -->
+      <section class="panel">
+
+        <p class="num">01 / CONTEXT</p>
+
+        <h2>The Engineering Problem</h2>
+
+        <p>
+          During my robotics internship at the Structural Properties
+          Laboratory at Idaho National Laboratory’s Materials and
+          Fuels Complex, I worked on a specimen retrieval system
+          for the MPTC. The test cell uses Universal Robots (UR)
+          robotic arms and other equipment to manipulate samples
+          during testing. Small irradiated specimens may become
+          displaced or fall, creating a need for a remotely
+          operated retrieval approach.
+        </p>
+
+      </section>
+
+
+      <!-- 02: MY ROLE -->
+      <section class="panel">
+
+        <p class="num">02 / MY ROLE</p>
+
+        <h2>System Integration &amp; Operator Interface</h2>
+
+        <p>
+          I reconfigured existing components to create a mobile
+          retrieval platform and used a Raspberry Pi as the central
+          computer. I developed a Python/PyQt5 graphical interface
+          that brought robotic arm control, rover movement, front
+          and wrist camera views, and Geiger counter readings into
+          one place. The goal was to make the separate subsystems
+          more cohesive for operator use.
+        </p>
+
+        <div class="flow">
+
+          <div>
+            Raspberry Pi<br/>
+            <small>Central computer</small>
+          </div>
+
+          <div>
+            Python / PyQt5<br/>
+            <small>Operator interface</small>
+          </div>
+
+          <div>
+            Robot &amp; Rover<br/>
+            <small>Movement control</small>
+          </div>
+
+          <div>
+            Cameras &amp; Geiger<br/>
+            <small>Visual / radiation feedback</small>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 03: INTERFACE -->
+      <section class="panel">
+
+        <p class="num">03 / INTERFACE</p>
+
+        <h2>Centralized Retrieval Controls</h2>
+
+        <p>
+          The interface includes six robot-joint controls, gripper
+          commands, rover movement buttons, two camera panels,
+          and a radiation-monitoring area. Combining these
+          functions allows an operator to view the work area
+          and manage the robot from one application.
+        </p>
+
+        <figure>
+          <img
+            alt="Screenshot of the PyQt5 interface with arm controls, camera views, rover controls, and radiation monitor"
+            class="hero-img"
+            loading="lazy"
+            src="../images/internship/control-interface.jpeg"
+          />
+
+          <figcaption>
+            Python/PyQt5 control interface developed for
+            the retrieval system.
+          </figcaption>
+        </figure>
+
+      </section>
+
+
+      <!-- 04: HARDWARE TESTING -->
+      <section class="panel">
+
+        <p class="num">04 / HARDWARE TESTING</p>
+
+        <h2>Robotic Arm &amp; Rover Demonstrations</h2>
+
+        <p>
+          These recordings document separate robotic arm and
+          mobile rover subsystem tests during development.
+        </p>
+
+        <div class="video-grid">
+
+          <!-- ROBOTIC ARM VIDEO -->
+          <figure class="portfolio-video">
+
+            <video
+              controls
+              playsinline
+              poster="../images/video-posters/robot-arm-test.mp4.jpg"
+              preload="metadata"
+            >
+              <source
+                src="../videos/robot-arm-test.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+
+            <figcaption>Robotic Arm Test</figcaption>
+
+          </figure>
+
+
+          <!-- ROVER VIDEO -->
+          <figure class="portfolio-video">
+
+            <video
+              controls
+              playsinline
+              poster="../images/video-posters/rover-test.mp4.jpg"
+              preload="metadata"
+            >
+              <source
+                src="../videos/rover-test.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML5 video.
+            </video>
+
+            <figcaption>Rover Movement Test</figcaption>
+
+          </figure>
+
+        </div>
+
+        <p class="note">
+          These recordings demonstrate subsystem testing and
+          validation, highlighting the functionality and
+          performance of individual components prior to full
+          system integration.
+        </p>
+
+      </section>
+
+
+      <!-- 05: TECHNICAL CHALLENGES -->
+      <section class="panel">
+
+        <p class="num">05 / TECHNICAL CHALLENGES</p>
+
+        <h2>ROS 2 Compatibility &amp; Adapting the Control System</h2>
+
+        <p>
+          One of the major technical challenges I encountered during
+          this project was integrating the myCobot robotic arm with
+          ROS 2. I initially used ROS 2 and RViz for robotic arm
+          control and visualization. However, incompatibilities
+          between the ROS version required by the robotic arm
+          and the Linux environment caused recurring system
+          crashes, preventing reliable operation.
+        </p>
+
+        <p>
+          I collaborated with IT to investigate the compatibility
+          issues and evaluate possible solutions, including updating
+          the Linux environment. However, institutional network
+          security restrictions made the required update impractical
+          within the internship's time constraints.
+        </p>
+
+        <p>
+          To overcome this challenge, I transitioned from ROS 2
+          to the <code>pymycobot</code> Python API, which allowed
+          me to communicate directly with the robotic arm.
+          I integrated this approach into my existing PyQt5
+          graphical user interface, enabling direct robotic
+          arm control without relying on the incompatible
+          ROS 2 setup.
+        </p>
+
+        <p>
+          This experience strengthened my troubleshooting and
+          system integration skills and demonstrated the importance
+          of adapting engineering solutions to real-world hardware,
+          software, security, and time constraints.
+        </p>
+
+      </section>
+
+
+      <!-- 06: ENGINEERING SKILLS -->
+      <section class="panel">
+
+        <p class="num">06 / ENGINEERING SKILLS</p>
+
+        <h2>What This Project Demonstrates</h2>
+
+        <p>
+          Robotic system integration, Raspberry Pi development,
+          Python/PyQt5 GUI programming, human–machine interface
+          design, camera integration, sensor monitoring, ROS 2
+          and RViz troubleshooting, direct robotic arm control
+          using the pymycobot Python API, and physical hardware
+          testing.
+        </p>
+
+      </section>
+
+
+      <!-- SKILLS APPLIED -->
+      <section
+        aria-labelledby="skills-applied-title"
+        class="panel skills-applied"
+      >
+
+        <p class="num">SKILLS IN PRACTICE</p>
+
+        <h2 id="skills-applied-title">Skills Applied</h2>
+
+        <p class="skills-intro">
+          Here is how the tools and techniques from my
+          <a href="../index.html#skills">Technical Skills</a>
+          section were applied to this project.
+        </p>
+
+        <div class="applied-skills-grid">
+
+          <article class="applied-skill">
+
+            <h3>Python / PyQt5</h3>
+
+            <p>
+              Developed the operator interface that brings
+              arm controls, rover navigation, camera views,
+              and radiation sensor readouts together.
+            </p>
+
+          </article>
+
+
+          <article class="applied-skill">
+
+            <h3>Raspberry Pi</h3>
+
+            <p>
+              Used as the central computer for integrating
+              the robotic arm, rover, and connected devices.
+            </p>
+
+          </article>
+
+
+          <article class="applied-skill">
+
+            <h3>ROS 2 / RViz</h3>
+
+            <p>
+              Initially used ROS 2 and RViz for myCobot
+              robotic arm control and visualization.
+              Investigated recurring compatibility issues
+              between ROS and Linux.
+            </p>
+
+          </article>
+
+
+          <article class="applied-skill">
+
+            <h3>pymycobot API</h3>
+
+            <p>
+              Transitioned to direct robotic arm control
+              using the pymycobot Python API and integrated
+              it into the PyQt5 operator interface.
+            </p>
+
+          </article>
+
+
+          <article class="applied-skill">
+
+            <h3>Circuit Design</h3>
+
+            <p>
+              Applied hardware integration and connection
+              troubleshooting to coordinate the robot’s
+              electronic components.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- PROJECT NAVIGATION -->
+    <div class="wrap next-links">
+
+      <a href="../index.html#projects">
+        ← All Projects
+      </a>
+
+      <a href="robotic-jigs.html">
+        Next Project →
+      </a>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="wrap">
+      © 2026 Krystal Foster · Mechatronics Engineering ·
+      <a href="../index.html#projects">All Projects</a>
+    </div>
+
+  </footer>
+
+</body>
+</html>
